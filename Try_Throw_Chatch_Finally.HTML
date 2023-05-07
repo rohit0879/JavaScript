@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+       please  Enter a number between 5 to 10 : <br>
+       <input type=""id="num"><br>
+        <button onclick="fun()">click on</button>
+        <div id="str"></div>
+    </body>
+    <script type="text/javascript">
+        document.getElementById("str").style.color="red";
+        function fun(){
+            var num = document.getElementById("num"); 
+            try{
+                var data = num.value;
+                if(isNaN(data)){
+                    throw "Please enter only number ";
+                }else{
+                    if(data < 5 || data > 10) { 
+                       throw "Out of range";
+                    }
+                    else{
+                        throw " ";
+                    }
+                }
+
+            }
+            catch(err){
+                document.getElementById("str").innerText=err;
+            }
+            finally{
+                num.value="";
+            }
+        }
+    </script>
+</html>

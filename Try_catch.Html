@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <button onclick="fun()">click on</button>
+        <div id="str"></div>
+    </body>
+    <script type="text/javascript">
+        document.getElementById("str").style.color="red";
+        function fun(){
+            try{
+                var num = 9;
+                // var num ="rohit kumar";
+                var x = num.toUpperCase();
+                document.getElementById("str").innerText=x;
+
+            }
+            catch(err){
+                document.getElementById("str").innerText=err;
+            }
+        }
+    </script>
+</html>

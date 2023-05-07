@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <h2 id="prt"></h2>
+        <button onclick="getdate()">date</button>
+        <button onclick="year()">year</button>
+        <button onclick="month()">Month</button>
+        <button onclick="today">today</button>
+        <button onclick="hour()">Hour</button>
+        <button onclick="minutes()">Mintutes</button>
+        <button onclick="Seconds()">Seconds</button>
+        <button onclick="time()">time</button>
+        <button onclick="week()">week</button>
+    </body>
+    <script>
+        var date = new Date();  // Object
+        function getdate(){
+            document.getElementById('prt').innerText= date;
+        }
+
+        function year(){
+            document.getElementById('prt').innerText= date.getFullYear();
+        }
+
+        function month(){
+            var month=["January","February","March","April","May","June","July","August","September","Octomber","November","December"];
+            document.getElementById('prt').innerText= month[date.getMonth()];
+        }
+
+        function today(){
+            document.getElementById('prt').innerText= date.getDate();
+        }
+
+        function hour(){
+            document.getElementById('prt').innerText= date.getHours();
+        }
+
+        function minutes(){
+            document.getElementById('prt').innerText= date.getMinutes();
+        }
+
+        function Seconds(){
+            document.getElementById('prt').innerText= date.getSeconds();
+        }
+
+        function time(){
+            document.getElementById('prt').innerText= date.getTime();
+        }
+
+        function week(){
+            document.getElementById('prt').innerText= date.getDay();
+        }
+    </script>
+</html>

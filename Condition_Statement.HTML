@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Condition statement </title>
+</head>
+<body>
+    age : <i id="vote"></i>
+    <br>
+    <div id="tot">
+
+    </div>
+    <br>
+    <button onclick="get()">vote</button>
+</body>
+<script type="text/javascript">
+     var ag = prompt("enter your age")
+     document.getElementById("vote").innerHTML=ag;
+    function get(){
+        if(ag>=18){
+        var give = "yes, i can give vote"
+        document.getElementById("tot").innerHTML=give;
+     }else{
+        var give = "No, i can't give vote"
+        document.getElementById("tot").innerHTML=give;
+     }
+    }
+</script>
+</html>

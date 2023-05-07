@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <html lang="en">
+    <head>
+        <title>valid number</title>
+    </head>
+    <body>
+        Please enter Your Number <br>
+        <input type="text"name=""onkeyup="val(this)">
+        <div id="res"></div>
+    </body>
+    <script type="text/javascript">
+        document.getElementById("res").style.color="red";
+         function val(elm){ 
+            if(isNaN(elm.value)){
+                document.getElementById("res").innerText="enter only number ";
+            }else{
+                document.getElementById("res").innerText=" ";
+                if(elm.value.length > 10){
+                    document.getElementById("res").innerText="enter only 10 digits";
+                }else{
+                    document.getElementById("res").innerText="";
+                }
+            }
+        }
+    </script>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>otp</title>
+    </head>
+    <body>
+        <h4> enter your moblie number</h4>
+        <input type="text"><br><br>
+        <button onclick="otp()">OTP</button>
+        <input type="text">
+        <br><br>
+        <button onclick="sub()">Submit</button>
+        <br><br>
+        <h2></h2>
+    </body>
+    <script type="text/javascript">
+         
+         function otp(){
+            var x = Math.random()*10000;
+            var y = Math.ceil(x);
+            alert(y);
+         }
+
+         function sub(){
+            document.write("thankyou,and welcome to my new Costomer");
+         }
+    </script>
+</html>

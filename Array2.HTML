@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> JAVA SCRIPT </title>
+</head>
+<body>
+    <h1 id="res"></h1>
+    <button onclick="pop()">POP</button>
+    <button onclick="push()">PUSH</button>
+    <button onclick="reverse()">REVERSE</button>
+    <button onclick="slice()">SLICE</button>
+    <button onclick="shift()">SHIFT</button>
+</body>
+<script type="text/javascript">
+    var fruit = ["Apple","mango","papaya"];
+    var obj = fruit;
+    document.getElementById("res").innerText=obj;
+
+    function pop(){
+        obj.pop();
+       document.getElementById("res").innerText=obj;
+    }
+
+    function push(){
+        obj.push("guava");
+       document.getElementById("res").innerText=obj;
+    }
+
+    function reverse(){
+        obj.reverse();
+       document.getElementById("res").innerText=obj;
+    }
+    
+    function slice(){
+        var x = obj.slice(1);
+       document.getElementById("res").innerText=x;
+    }
+
+    function shift(){
+        var x = obj.shift();
+       document.getElementById("res").innerText=x;
+    }
+   
+    
+</script>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>clearInterval</title>
+    </head>
+    <body>
+        <h1 id="str"></h1>
+        <button onclick="stop()">stop</button>
+        <button onclick="start()">start</button>
+    </body>
+    <script type="text/javascript">
+          var my = setInterval(count,1000);
+          var c = 0;
+          function count(){
+            document.getElementById("str").innerHTML=c;
+            c++;
+          }
+
+          function stop(){
+            clearInterval(my);
+          }
+         
+          function start(){
+            clearInterval(my);
+          }
+    </script>
+
+</html>
